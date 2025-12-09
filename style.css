@@ -406,7 +406,7 @@ a {
      font-size: 0.88rem;
      font-weight: 500;
      color: var(--color-text-soft);
-     color: #ffffff !important;
+     /* color: #ffffff !important; */
 }
 
 .form-row input,
@@ -477,7 +477,7 @@ a {
           0 0 0 1px rgba(83, 126, 197, 0.55),
           0 15px 35px rgba(15, 23, 42, 0.16);
      transform: translateY(-1px);
-     background-color: #ffffff;
+     /* background-color: #ffffff; */
 }
 
 /* Simple validation indicator */
@@ -960,7 +960,7 @@ html {
 }
 /* FORCE "FREE!" TO BECOME HUGE AND FULL-WIDTH */
 .home-hero h1 {
-     font-size: 20rem !important;
+     font-size: clamp(4.5rem, 14vw, 6rem) !important;
      /* SUPER BIG */
      font-weight: 900 !important;
      width: 100%;
@@ -973,7 +973,7 @@ html {
 /* MOBILE VERSION */
 @media (max-width: 600px) {
      .home-hero h1 {
-          font-size: 4.5 rem !important;
+          font-size: 5.5 rem !important;
           letter-spacing: 0.04em;
      }
 }
@@ -994,10 +994,24 @@ html {
 /* MOBILE SIZE */
 @media (max-width: 600px) {
      .home-hero h2 {
+          
           font-size: 2.4rem !important;
           letter-spacing: 0.01em;
      }
 }
+@media (max-width: 600px) {
+
+     /* Target ONLY the 2 lines you want */
+     .home-hero h2:nth-of-type(2),
+     .home-hero h2:nth-of-type(3) {
+          white-space: nowrap;
+          /* prevents breaking into multiple lines */
+          font-size: 1.8rem !important;
+          /* adjust size so it fits */
+          line-height: 1.2;
+     }
+}
+
 /* =========================
    MOBILE HEADER COLLAPSE ON SCROLL
    ========================= */
