@@ -973,7 +973,7 @@ html {
 /* MOBILE VERSION */
 @media (max-width: 600px) {
      .home-hero h1 {
-          font-size: 6rem !important;
+          font-size: 4.5 rem !important;
           letter-spacing: 0.04em;
      }
 }
