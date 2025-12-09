@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <title>Contact Us | Collaboration Site</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+     <!-- HEADER -->
+     <header class="site-header">
+          <div class="container header-content">
+               <a href="index.html" class="logo-box">
+                    <img src="51 rocks.png" alt="51RocksClub Logo" class="site-logo">
+               </a>
+
+               <nav class="main-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link active">Contact Us</a>
+
+                    <!-- <div class="nav-dropdown">
+                         <button class="nav-dropdown-btn">Quick Links ▾</button>
+                         <div class="nav-dropdown-menu">
+                              <a href="terms.html#terms" class="nav-link">Terms of Service</a>
+                              <a href="terms.html#privacy" class="nav-link">Privacy Policy</a>
+                         </div>
+                    </div> -->
+               </nav>
+          </div>
+     </header>
+
+     <!-- MAIN CONTENT -->
+     <main class="container main-content">
+          <section class="page-section">
+               <h1>Contact Us</h1>
+               <p>
+               Let’s build a partnership that brings real projects — not just enquiries.
+
+               </p>
+
+               <!-- Same form as home (no hidden section here) -->
+               <form class="lead-form">
+                    <div class="form-row">
+                         <label for="fullName" class="required">Full Name</label>
+                         <input type="text" id="fullNameContact" name="fullName" required />
+                    </div>
+
+                    <div class="form-row">
+                         <label for="phone" class="required">Phone Number</label>
+                         <input type="tel" id="phoneContact" name="phone" required />
+                    </div>
+
+                    <div class="form-row">
+                    <label for="email" class="required">Email Address</label>>
+                         <input type="email" id="emailContact" name="email" required />
+                    </div>
+
+                    <div class="form-row">
+                         <label for="businessTypeContact" class="required">Which type of business do you have?</label>
+                         <select id="businessTypeContact" name="businessType" required>
+                              <option value="">-- Select Your Business Type to Partner --</option>
+                         
+                              <option>Contractors</option>
+                              <option>Architects & Design Consultants</option>
+                              <option>Interior Designers</option>
+                         
+                              <option>Building Materials Suppliers</option>
+                              <option>Cement & Construction Materials</option>
+                              <option>TMT Steel & Structural Steel</option>
+                              <option>Bricks, Blocks & Aggregates</option>
+                              <option>RMC (Ready Mix Concrete)</option>
+                              <option>Construction Chemicals & Waterproofing</option>
+                              <option>Roofing Solutions</option>
+                         
+                              <option>Tiles, Granites & Marbles</option>
+                              <option>Paints & Surface Finishes</option>
+                              <option>Doors, Windows & Glass Solutions</option>
+                              <option>Hardware, Fittings & Fixtures</option>
+                              <option>Plumbing, Sanitaryware & Bathroom Accessories</option>
+                              <option>Electrical & Lighting Solutions</option>
+                         
+                              <option>Modular Kitchen & Wardrobes</option>
+                              <option>Home & Interior Solutions (Décor, Furniture, Finishes)</option>
+                              <option>Smart Homes & Home Automation</option>
+                         
+                              <option>Gardening & Landscaping Services</option>
+                         
+                              <option>Real Estate (Sales & Leasing)</option>
+                              <option>Real Estate Support Services</option>
+                              <option>Registration & Documentation Consultants</option>
+                              <option>Home Loans & Financial Services</option>
+                         
+                              <option>Packers & Movers</option>
+                         
+                              <option value="Other">Other</option>
+                         </select><br>
+<div class="form-row">
+     <label for="businessDescription">Describe your business type (if not listed above)</label>
+     <textarea id="businessDescription" name="businessDescription" rows="3"></textarea>
+</div>
+                    </div>
+
+                    <div class="form-row hidden" data-other-row>
+                         <label for="otherBusinessContact">Other (please specify)</label>
+                         <textarea id="otherBusinessContact" name="otherBusiness" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                         <label for="reasonContact">Why do you want to collaborate with us?</label>
+                         <textarea id="reasonContact" name="reason" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="primary-btn">Submit</button>
+
+                    <p class="form-message" data-default=""></p>
+               </form>
+          </section>
+     </main>
+
+     <footer class="site-footer">
+          <div class="container footer-content">
+     
+               <!-- TOP LINE: All links in one row -->
+               <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <span>|</span>
+                    <a href="about.html">About Us</a>
+                    <span>|</span>
+                    <a href="contact.html">Contact Us</a>
+                    <span>|</span>
+                    <a href="terms.html#terms">Terms of Service</a>
+                    <span>|</span>
+                    <a href="terms.html#privacy">Privacy Policy</a>
+               </div>
+     
+               <!-- SECOND LINE: Only copyright -->
+               <p class="footer-copy">© 2025 @ 51Rocks.com</p>
+     
+          </div>
+     </footer>
+     <script src="script.js"></script>
+</body>
+
+</html>
