@@ -597,6 +597,39 @@ html {
      font-size: 0.94rem;
      color: #cbd5f5;
 }
+/* SOCIAL ICONS */
+.footer-social {
+     display: flex;
+     gap: 1rem;
+     margin-bottom: 1rem;
+     justify-content: flex-start;
+}
+
+.footer-social a {
+     color: #ffffff;
+     padding: 6px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: 0.25s ease;
+}
+
+.footer-social a:hover {
+     color: var(--color-accent);
+     transform: translateY(-3px) scale(1.12);
+}
+
+/* Icon size */
+.footer-social i {
+     font-size: 22px;
+}
+
+@media (max-width: 600px) {
+     .footer-social i {
+          font-size: 26px;
+          /* a bit bigger on mobile */
+     }
+}
 
 /* =========================
    RESPONSIVE
