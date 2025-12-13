@@ -79,12 +79,29 @@ a {
 }
 
 .site-logo {
-     height: 64px;
+     height: 100px;
      width: auto;
      display: block;
      filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.4));
 }
 
+@media (max-width: 600px) {
+
+     /* Increase mobile logo size responsively */
+     .site-logo {
+          height: clamp(80px, 13vw, 130px);
+          /* min, preferred, max */
+          width: auto;
+          /* keep aspect ratio */
+          max-height: 130px;
+     }
+
+     /* Keep a smaller size when header is scrolled (but still larger than before) */
+     .site-header.scrolled .site-logo {
+          height: clamp(60px, 9vw, 90px);
+          /* smaller when scrolled */
+     }
+}
 /* NAVBAR */
 
 .main-nav {
