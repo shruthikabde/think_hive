@@ -74,15 +74,18 @@ a {
 .logo-box {
      border: none;
      padding: 0;
-     display: flex;
+     display: inline-flex;
      align-items: center;
+     border-radius: 50%;
 }
 
 .site-logo {
-     height: 100px;
+     height: 140px;
      width: auto;
      display: block;
      filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.4));
+     border-radius: 50%;
+     
 }
 
 @media (max-width: 600px) {
@@ -102,6 +105,9 @@ a {
           /* smaller when scrolled */
      }
 }
+
+
+
 /* NAVBAR */
 
 .main-nav {
