@@ -76,7 +76,7 @@ a {
      padding: 0;
      display: inline-flex;
      align-items: center;
-     border-radius: 50%;
+     border-radius: 40%;
 }
 
 .site-logo {
@@ -84,7 +84,7 @@ a {
      width: auto;
      display: block;
      filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.4));
-     border-radius: 50%;
+     border-radius: 40%;
      
 }
 
@@ -92,11 +92,13 @@ a {
 
      /* Increase mobile logo size responsively */
      .site-logo {
+          display: inline-flex;
           height: clamp(80px, 13vw, 130px);
           /* min, preferred, max */
           width: auto;
           /* keep aspect ratio */
           max-height: 130px;
+          border-radius: 40%;
      }
 
      /* Keep a smaller size when header is scrolled (but still larger than before) */
